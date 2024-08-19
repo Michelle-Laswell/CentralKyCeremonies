@@ -26,25 +26,26 @@
     </header>
 
     <main>
+        <!-- SLIDESHOW -->
         <section class="slideshow-container">
             
             <div>
-                <img src="images/slide1.jpg>
+                <img src="images/slide1.jpg" alt="table setting for bride and groom">
                 <span>placeholder1</span>
             </div>
 
             <div>
-                <img src="images/slide2.jpg>
+                <img src="images/slide2.jpg" alt="picture of a wedding in progress">
                 <span>placeholder2</span>
             </div>
 
             <div>
-                <img src="images/slide3.jpg>
+                <img src="images/slide3.jpg" alt="picture of empty chairs before wedding ceremony">
                 <span>placeholder3</span>
             </div>
 
             <div>
-                <img src="images/slide4.jpg>
+                <img src="images/slide4.jpg" alt="picture of the bride and groom table">
                 <span>placeholder4</span>
             </div>
 
@@ -74,43 +75,159 @@
                 <!-- <p>Central KY Ceremonies offers a variety of services to meet your needs. Whether you are looking for a traditional or non-traditional ceremony, we can help you create the perfect ceremony for your special day.</p> -->
             </div>
 
-            <div class="design">
+            <article class="design">
                 <h3>Design</h3>
                 <p>Central KY Ceremonies offers traditional or nontraditional ceremonies that are perfect for couples 
                     who want to celebrate their love in a traditional or nontraditional way. Our ceremonies are designed 
                     to be meaningful and memorable, and can be customized to fit your needs.
                 </p>                
-            </div>
+            </article>
 
-            <div class="branding">
+            <article class="branding">
                 <h3>Branding</h3>
                 <p>Central KY Ceremonies offers a variety of branding services to help you create a unique and memorable 
                     ceremony that reflects your personality and style. Our branding services include custom ceremony 
                     design, personalized vows, and more.
                 </p>
-            </div>
+            </article>
 
-            <div class="consult">
+            <darticle class="consult">
                 <h3>Consultation</h3>
                 <p>Central KY Ceremonies offers consultation services to help you plan your ceremony. Our consultation 
                     services include assistance with ceremony planning, vendor selection, and more. We can help you create 
                     a ceremony that is perfect for you and your partner.
                 </p>
-            </div>
+            </article>
 
-            <div class="promises">
+            <article class="promises">
                 <h3>Promises</h3>
                 <p>Central KY Ceremonies offers a variety of promises to help you create a ceremony that is perfect for 
                     you and your partner. Our promises include traditional and nontraditional vows, as well as custom 
                     vows that are designed to reflect your unique relationship.
                 </p>
-            </div>
+            </article>
 
         </section>
 
-        
+        <!-- GRID 2 FOR PRICING PLANS -->
+        <section class="grid2-container" id="plans">
+
+            <div class="plans">
+                <h3>Pricing Plans</h3>
+                <p>Choose a pricing plan that fits your needs.</p>
+            </div>
+
+            <article class="plan1">
+                <ul>
+                    <li class="basic">Basic</li>
+                    <li>feature 1</li>
+                    <li>feature 2</li>
+                    <li>feature 3</li>
+                    <li class="price">
+                        <h2>$ 250</h2>
+                        <p>per ceremony</p>
+                    </li>
+                    <li class="button">
+                        <a href="#contact" target="_self">Contact Me</a>
+                </ul>
+            </article>
+
+            <article class="plan2">
+                <ul>
+                    <li class="pro">Pro</li>
+                    <li>feature 1</li>
+                    <li>feature 2</li>
+                    <li>feature 3</li>
+                    <li class="price">
+                        <h2>$ 450</h2>
+                        <p>per ceremony</p>
+                    </li>
+                    <li class="button">
+                        <a href="#contact" target="_self">Contact Me</a>
+                </ul>
+            </article>
+
+            <article class="plan3">
+                <ul>
+                    <li class="premium">Premium</li>
+                    <li>feature 1</li>
+                    <li>feature 2</li>
+                    <li>feature 3</li>
+                    <li class="price">
+                        <h2>$ 650</h2>
+                        <p>per ceremony</p>
+                    </li>
+                    <li class="button">
+                        <a href="#contact" target="_self">Contact Me</a>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- GRID 3 - WHO I AM -->
+        <section class="grid3-container">
+            <div class="about" id="about">
+                <span>Who I Am</span>
+            </div>
+
+            <article class="bio">
+                <div class="card">
+                    <img src="images/jacqui.jpg" alt="picture of Jacqui">
+                    <div class="bio-container">
+                        <h3>Jacqueline Bartek</h3>
+                        <p>Central KY Ceremonies is a wedding officiant service that offers traditional and nontraditional 
+                            ceremonies for couples who want to celebrate their love in a unique and meaningful way. Our 
+                            ceremonies are designed to be memorable and personal, and can be customized to fit your needs. 
+                            We offer a variety of services to help you create the perfect ceremony for your special day.
+                        </p>
+                        <p><button class="contactBtn">Contact</button></p>
+                    </div>                
+                </div>
+            </article>
+
+            <!-- CONTACT -->
+
+            <form class="contact-container action="/action_page.php" target="_blank">
+                <div class="contact-section">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." required>                
+                </div>
+
+                <div class="contact-section">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+                </div>
+
+                <div class="contact-section">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="contact-section">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Write something.." style="height:200px" required>
+                </div>
+
+                <button type="submit" value="Send">
+            </form>
+        </section>
+
     </main>
 
+    <footer>
+
+        <h4>Footer</h4>
+        <p>&copy; 2021 Central KY Ceremonies</p>
+        <a href="#" class="btn"><i class="fa fa-arrow-up"></i>To the top</a>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+    </footer>
+
+    <script src="/script/slideshow.js"></script>
     
 
 </body>
