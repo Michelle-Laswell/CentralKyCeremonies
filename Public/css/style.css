@@ -1,0 +1,80 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Lato", sans-serif
+}
+
+html {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: transparent;
+    width: 100%;   
+}
+
+.navbar a {
+    font-size: 18px;
+    border: none;    
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.navbar a:hover {   
+    background-color: #ccc;
+    color: #000;
+}
+
+.navbar a:active {
+    background-color: rgba(241, 241, 241, 0.788);
+    color: rgb(0, 0, 0);
+}
+
+.header {
+    padding: 0.01em 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.header:after,
+.header:before,
+.slideshow-container:after,
+.slideshow-container:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mySlide {
+    display: none
+}
+
+.slide-tag {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-top: 6px;
+}
+
+.slideshow-container{
+    padding: 0.01em 16px;
+}
+
