@@ -62,8 +62,20 @@ body {
     display: table;
     clear: both;
 }
+/*
+.display-container {
+    position: relative;
+}
 
-.mySlide {
+.display-container:hover {
+    display: block;
+}
+
+.display-container:hover {
+    display: inline;
+}
+*/
+.mySlides {
     display: none
 }
 
@@ -74,7 +86,119 @@ body {
     margin-top: 6px;
 }
 
-.slideshow-container{
+.slideshow-container {
+    position: relative;
+    max-width: 75%;
+    margin: auto;
     padding: 0.01em 16px;
 }
+
+.display-container {   
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;    
+}
+/*
+.slideBtn-container {
+    position:absolute;
+    background-color: rgb(108, 108, 103);
+    color: rgb(255, 255, 255);
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 8px 16px;
+}*/
+
+.slideBtn-container { 
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    background-color: rgb(108, 108, 103);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 20px 28px;
+}
+
+.arrowBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.prev, 
+.next {
+    cursor: pointer;    
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(108, 108, 103);
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+.prev a,
+.next a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+}
+/*
+ .round {
+    border-radius: 50%;
+ }*/
+
+.arrowBtns .prev:hover, .arrowBtns .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slideCenter {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.slide-tag {
+    cursor: pointer;
+    height: 1px;
+    width: 20px;
+    padding: 0;
+    margin-top: 6px;
+    margin-right: 6px;
+    background-color: #bbb;
+    border-radius: 0;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.demodots {
+    margin-bottom: 15px;
+}
+
+.active, .slide-tag:hover {
+    background-color: #717171;
+}
+
+.slide-border {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
 
